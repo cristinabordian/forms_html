@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+
+    <body>
+        <br>
+        <br>
+
+        <table border="1" align="center">
+            <tr>
+                <td> 
+                    <h1>Create an Account</h1> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form action="thankyou.html">
+                        <!--This tag is used to group related fields in a form-->
+                       <fieldset>
+                           <legend>Contact Info</legend>
+
+                        <label>
+                            What is your full name?
+                            <input type="text" required/>
+                        </label>
+                          <br>
+                        <label>
+                            What is your phone number?
+                            <input type="text" maxlength="13"/>
+                        </label>
+                           <br>
+                           <label> Occupation </label>
+                             <!--Datalist tag is used to specify a list of pre-defined options for an input element
+                            Once a value is picked, you cannot change it to another option from the list, need to see if that can be done-->
+                                <input list="occupation" name="occupation" />
+                                <datalist id="occupation">
+                                    <option value="student">
+                                    <option value="retired">
+                                    <option value="worker">
+                              </datalist>
+
+                          </fieldset>
+                           <br>
+                        <label>
+                             Your birthdate
+                            <input type="date" />
+                        </label>
+                        <br>
+                        
+                         <label>
+                            Gender
+                            <br>
+                            <input type="radio" name="g"> F <br>
+                            <input type="radio" name="g"> M <br>
+                            <input type="radio" name="g"> O <br>
+
+                        </label>                  
+                        
+                        <br>
+                        <label>
+                            Your country
+                            <select>
+                                <!--The <optgroup> tag is used to group related options in a <select> element (drop-down list).-->
+                                <optgroup label="Europe">
+                                   <option>Moldova</option>
+                                   <option>Romania</option>
+                               </optgroup>
+
+                               <optgroup label="Norh America">
+                                  <option>USA</option>
+                                   <option>Canada</option>
+                               </optgroup>
+                              <optgroup label="Asia">
+                                  <option>India</option>
+                                  <option>China</option>
+                              </optgroup>
+                            </select>
+                        </label>
+                        <br>
+
+                        <label>
+                            Education levels
+                            <br>
+                            <input type="checkbox"> Primary School <br>
+                            <input type="checkbox"> High School <br>
+                            <input type="checkbox"> College <br>
+                            <input type="checkbox"> University<br>
+                        </label>
+                        <br>
+
+                        <label>
+                            Write about yourself <small>Max 500 characters</small>
+                            <br>
+                            <textarea></textarea>
+                        </label>
+                        <br>
+
+                        <label>
+                            <input type="checkbox" required>
+                            <!--Homework: Attribute target would open the terms and conditions page in a new browser tab-->
+                            I agree with <a href="terms.html" target="_blank">terms and conditions.</a> 
+                        </label>
+                        <hr>
+                        <button>CREATE</button>
+                    </form>
+                    
+                </td>
+            </tr>
+
+
+
+        </table>
+    </body>
+</html>
